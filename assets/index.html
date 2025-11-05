@@ -1,14 +1,172 @@
 <!doctype html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Use Tailwind CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
-  <h1 class="">
-    Hello world!
-  </h1>
-</body>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clientforce AI Launch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              display: ['"Sora"', 'sans-serif'],
+              body: ['"Manrope"', 'sans-serif'],
+            },
+            colors: {
+              midnight: '#040614',
+              neon: '#73ff8b',
+              limeGlow: '#afff52',
+              amberGlow: '#ffb347',
+            },
+            boxShadow: {
+              glow: '0 0 25px rgba(115, 255, 139, 0.45)',
+              glowAmber: '0 0 22px rgba(255, 179, 71, 0.45)',
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="relative bg-midnight text-white font-body antialiased">
+    <div class="pointer-events-none absolute inset-0 overflow-hidden">
+      <div
+        class="absolute -top-40 -right-48 h-96 w-96 rounded-full bg-emerald-500/40 blur-[160px]"
+      ></div>
+      <div
+        class="absolute top-48 -left-20 h-80 w-80 rounded-full bg-limeGlow/30 blur-[140px]"
+      ></div>
+      <div
+        class="absolute bottom-0 right-1/4 h-64 w-64 rounded-full bg-amberGlow/20 blur-[160px]"
+      ></div>
+    </div>
+
+    <header
+      class="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-[#040b1f]/80 backdrop-blur-xl"
+    >
+      <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 lg:px-8">
+        <div class="flex items-center gap-3">
+          <span
+            class="flex h-11 w-11 items-center justify-center rounded-2xl bg-gradient-to-br from-emerald-400 via-limeGlow to-emerald-600 text-lg font-semibold text-midnight shadow-glow"
+            >AI</span
+          >
+          <div class="leading-tight">
+            <p class="font-display text-lg font-semibold tracking-tight">Clientforce Ai</p>
+            <p class="text-xs font-medium uppercase tracking-[0.3em] text-white/50">
+              perpetual sales agents
+            </p>
+          </div>
+        </div>
+
+        <nav class="hidden items-center gap-6 text-sm font-semibold text-white/70 md:flex">
+          <a class="transition hover:text-white" href="#overview">Overview</a>
+          <a class="transition hover:text-white" href="#agents">Agents</a>
+          <a class="transition hover:text-white" href="#partners">JV Partners</a>
+          <a class="transition hover:text-white" href="#rewards">Rewards</a>
+        </nav>
+
+        <div class="flex items-center gap-3">
+          <div
+            class="hidden items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-white/80 shadow-glow md:flex"
+          >
+            <span class="inline-flex h-2 w-2 animate-pulse rounded-full bg-neon"></span>
+            Going Live: <span class="text-white">Nov 22nd 2025</span>
+          </div>
+          <a
+            href="#partners"
+            class="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-emerald-400 via-neon to-emerald-600 px-5 py-3 text-sm font-bold uppercase tracking-wide text-midnight shadow-glow transition hover:shadow-lg hover:shadow-emerald-500/40"
+          >
+            Grab Your Link
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main class="relative z-10 pt-36 pb-24">
+      <section class="mx-auto max-w-6xl px-4 text-center lg:px-8">
+        <div class="flex flex-wrap items-center justify-center gap-3 text-xs font-semibold uppercase">
+          <span
+            class="inline-flex items-center gap-2 rounded-full border border-emerald-300/40 bg-gradient-to-r from-emerald-400/20 via-emerald-500/20 to-limeGlow/20 px-4 py-2 text-emerald-200 shadow-glow"
+          >
+            <span class="inline-flex h-2 w-2 rounded-full bg-neon"></span>
+            Going Live: <span class="text-white">Nov 22nd 2025</span>
+          </span>
+          <span
+            class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-white/80 shadow-glowAmber"
+          >
+            <span class="text-lg">🚀</span> Blockbuster Launch
+          </span>
+          <span
+            class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-white/80"
+          >
+            <span class="text-xl font-bold text-amber-300">$5,000</span> JV Contest
+          </span>
+        </div>
+
+        <p
+          class="mx-auto mt-12 max-w-3xl text-sm uppercase tracking-[0.3em] text-white/45"
+        >
+          This is not the typical “launch hype” my esteemed affiliates and JV partners
+        </p>
+
+        <h1
+          class="mx-auto mt-6 max-w-4xl font-display text-4xl font-semibold leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl"
+        >
+          Meet <span class="text-transparent bg-gradient-to-r from-emerald-400 via-neon to-emerald-600 bg-clip-text">Clientforce Ai</span>
+          — The First Perpetual AI Sales Agents System
+        </h1>
+
+        <p class="mx-auto mt-6 max-w-3xl text-lg text-white/70">
+          Set it up once, then watch your AI agents prospect, follow up, and close deals on a set goal
+          — forever. Automate growth, ignite conversions, and give your partners results they can brag
+          about.
+        </p>
+
+        <div class="mx-auto mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+          <a
+            href="#demo"
+            class="group inline-flex items-center gap-3 rounded-full bg-white px-6 py-3 font-semibold text-midnight shadow-xl transition hover:-translate-y-0.5 hover:shadow-glow"
+          >
+            <span
+              class="flex h-9 w-9 items-center justify-center rounded-full bg-midnight text-white transition group-hover:bg-emerald-500"
+            >
+              ▶
+            </span>
+            Watch The Demo
+          </a>
+          <a
+            href="#bookings"
+            class="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/5 px-6 py-3 font-semibold text-white/80 transition hover:border-emerald-400/60 hover:text-white"
+          >
+            <span class="inline-flex h-2 w-2 rounded-full bg-amber-300"></span>
+            Bookings Calendar
+          </a>
+        </div>
+
+        <div
+          class="mx-auto mt-12 flex max-w-3xl flex-col items-center justify-between gap-6 rounded-3xl border border-white/10 bg-white/5 p-6 text-left sm:flex-row sm:items-center"
+        >
+          <div>
+            <p class="text-xs font-semibold uppercase tracking-[0.3em] text-emerald-200">
+              proof first, hype never
+            </p>
+            <p class="mt-2 text-lg font-semibold text-white">
+              We are not throwing hype words around. Our agents have already booked 1,200+ qualified
+              demos on autopilot.
+            </p>
+          </div>
+          <div class="rounded-2xl border border-emerald-300/30 bg-emerald-500/10 px-4 py-3 text-center">
+            <p class="text-xs uppercase tracking-[0.3em] text-emerald-200">Next Webinar</p>
+            <p class="mt-1 font-display text-xl font-semibold text-white">Nov 18 · 2:00 PM EST</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
