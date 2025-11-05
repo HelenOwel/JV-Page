@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="styles.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -34,7 +35,7 @@
       };
     </script>
   </head>
-  <body class="relative bg-midnight text-white font-body antialiased">
+  <body class="relative bg-midnight text-white font-body antialiased bg-launch">
     <div class="pointer-events-none absolute inset-0 overflow-hidden">
       <div
         class="absolute -top-40 -right-48 h-96 w-96 rounded-full bg-emerald-500/40 blur-[160px]"
@@ -45,10 +46,37 @@
       <div
         class="absolute bottom-0 right-1/4 h-64 w-64 rounded-full bg-amberGlow/20 blur-[160px]"
       ></div>
+      <div class="floating-element floating-element--chart">
+        <div class="floating-card">
+          <div class="floating-card__header">
+            <span class="floating-dot"></span>
+            Daily Pipeline
+          </div>
+          <div class="floating-card__metric">
+            <span class="floating-card__value">+182%</span>
+            <span class="floating-card__label">week over week</span>
+          </div>
+        </div>
+      </div>
+      <div class="floating-element floating-element--badge">
+        <div class="floating-badge">
+          <span class="floating-badge__icon">🎯</span>
+          <div>
+            <p class="floating-badge__title">Booked Demo</p>
+            <p class="floating-badge__subtitle">Lead ID · #34912</p>
+          </div>
+        </div>
+      </div>
+      <div class="floating-element floating-element--cta">
+        <div class="floating-pill">
+          <span class="floating-pill__icon">⚡</span>
+          <span class="floating-pill__text">AI Agent Active</span>
+        </div>
+      </div>
     </div>
 
     <header
-      class="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-[#040b1f]/80 backdrop-blur-xl"
+      class="fixed left-1/2 top-4 z-50 w-[calc(100%-2rem)] max-w-6xl -translate-x-1/2 rounded-3xl border border-white/10 bg-[#040b1f]/85 backdrop-blur-xl shadow-[0_25px_50px_-12px_rgba(0,0,0,0.7)]"
     >
       <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 lg:px-8">
         <div class="flex items-center gap-3">
@@ -118,7 +146,7 @@
         <h1
           class="mx-auto mt-6 max-w-4xl font-display text-4xl font-semibold leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl"
         >
-          Meet <span class="text-transparent bg-gradient-to-r from-emerald-400 via-neon to-emerald-600 bg-clip-text">Clientforce Ai</span>
+          Meet <span class="gradient-text">Clientforce Ai</span>
           — The First Perpetual AI Sales Agents System
         </h1>
 
